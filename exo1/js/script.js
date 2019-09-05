@@ -5,6 +5,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
     for (let button of navButons){
         button.addEventListener(`click`, () => {
             console.log(button);
+            // 
         });
     };
 });

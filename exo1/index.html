@@ -19,17 +19,17 @@
             <nav>
                 <ul class="inlineBlock">
                     <li>
-                        <button>
+                        <button button-data="stone">
                             <img src="./img/noun_rock_5846.png" alt="Image d'une pierre">
                         </button>
                     </li>
                     <li>
-                        <button>
+                        <button button-data="paper">
                             <img src="./img/noun_Paper_1091290.png" alt="Image d'une feuille">
                         </button>
                     </li>
                     <li>
-                        <button>
+                        <button button-data="scissors">
                             <img src="./img/noun_Scissors_2826183.png" alt="Image de ciseaux">
                         </button>
                     </li>
@@ -41,11 +41,11 @@
         <main>
             <!-- Zone de jeu -->
             <section class="inlineBlock">
-                <article>
+                <article id="userCard">
                     <img src="./img/noun_rock_5846.png" alt="Image d'une pierre">
                 </article>
 
-                <article>
+                <article id="computerCard">
                     <img src="./img/noun_Paper_1091290.png" alt="Image d'une feuille">
                 </article>
 
@@ -58,7 +58,7 @@
             <!-- Score -->
             <section>
                 <button>Jouer</button>
-                <h2>Score 0 à 0</h2>
+                <h2>Score <span id="userScore"></span> à <span id="computerScore"></span></h2>
             </section>
         </main>
 
@@ -70,5 +70,8 @@
                 https://www.w3schools.com/tags/att_a_target.asp
             -->
         </footer>
+
+        <!-- Le Javascript s'intègre juste avant la fin du BODY -->
+        <script src="./js/script.js"></script>
     </body>
 </html>
